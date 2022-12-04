@@ -1,0 +1,1 @@
+web: gunicorn repor shopx.wsgi --log-file -
