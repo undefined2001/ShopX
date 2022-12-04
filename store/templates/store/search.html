@@ -1,0 +1,28 @@
+{% extends 'store/base.html' %}
+{% load static%}
+{%block title%}Search{%endblock title%}
+
+
+{% block main-content %}
+
+    {% for product in products %}
+    <div class="">
+        <div class="img">
+            <a href=""><img src="{{product.product_image.url}}" alt="" height="310px" width="220px"></a>
+        </div>
+        <!-- <div class="des">
+            <div class="description">
+                <h5 class="text-white my-font-title">Title: {{product.title}}</h5>
+                <p class="text-white">{{product.discription}}</p>
+                <h5 class="text-white">Price: {{product.price}} Tk</h5>
+            </div>
+            <div class="button">
+                <a href="" class="btn btn-light add-cart">Add To Cart</a>
+                <a href="" class="btn btn-info buy-now">Buy Now</a>
+            </div>
+        </div> -->
+    </div>
+    {% endfor %}
+
+
+{% endblock main-content %}
